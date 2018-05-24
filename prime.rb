@@ -14,7 +14,7 @@
 def prime?(number)
   return false if number < 2
   return false if number != 2 && number.even?
-  (2..number - 1).to_a.each do |i|
+  (2..number / 2).to_a.each do |i|
    return false if number % i == 0
   end
   return true
